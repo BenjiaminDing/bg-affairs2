@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/WEB-INF/02阶段移动端/阶段3-移动web开发资料/day01/html5/xxx/echarts-demo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/WEB-INF/02阶段移动端/阶段3-移动web开发资料/day01/html5/xxx/flexible.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/WEB-INF/juicer/juicegit/Juicer" vcs="Git" />
+  </component>
+</project>

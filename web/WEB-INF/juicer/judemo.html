@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <button type="button" id="query-dlq-config" class="btn btn-sm btn-primary"><i
+            class="fa fa-dot-circle-o"></i> 查询</button>
+</div>
+<div class="row" id="student-info">
+    <!--学生信息查询功能模版......-->
+</div>
+<hr>
+<div class="row" id="student-info2" style="background-color:lightgoldenrodyellow;">
+    <!--学生信息查询功能模版......-->
+</div>
+<!--学生信息查询功能模版-->
+<script id="student-info-script" type="text/template">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>学生ID</th>
+            <th>学生名字</th>
+            <th>是否新生</th>
+            <th>更改</th>
+        </tr>
+        </thead>
+        <tbody>
+        {@each studentInfos as studentInfo}
+        <tr>
+            <td>${studentInfo.studentId}</td>
+            <td>${studentInfo.studentName}</td>
+            <td>
+                <select id="is-active">
+                    {@if studentInfo.isNew === "false"}
+                    <option value="false" selected>false-wrong</option>
+                    <option value="true">true</option>
+                    {@else}
+                    <option value="false">false</option>
+                    <option value="true" selected>true</option>
+                    {@/if}
+                </select>
+            </td>
+            <td><a href="#" name="${studentInfo.studentId}" id="update-student-info">更改</a></td>
+        </tr>
+        {@/each}
+        </tbody>
+    </table>
+</script>
+
+
+
+
+<script id="tpl" type="text/template">
+    <ul>
+        {@each list as it,index}
+        <li>${it.name} (index: ${index})</li>
+        {@/each}
+
+        {@each blah as itx}
+        <li>
+            num: ${itx.num} <br />
+<!--             index 3-->
+            {@if itx.num==3}
+
+               {@each itx.innerList as inner}
+                ${inner.time} <br />
+               {@/each}
+
+            {@/if}
+        </li>
+        {@/each}
+    </ul>
+</script>
+<!--jquery-->
+<script src="../assets/lib/jquery.js"></script>
+<script src="../assets/js/baseApi.js"></script>
+<script type="text/javascript" src="../assets/lib/juicer/juicer.js"></script>
+<script type="text/javascript" src="./judemo.js"></script>
+</body>
+</html>

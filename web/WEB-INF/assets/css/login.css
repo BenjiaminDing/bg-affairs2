@@ -1,0 +1,65 @@
+
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    /*css3*/
+    box-sizing: border-box;
+    background:  skyblue ;
+
+    /*background-size: cover;*/
+}
+/*  */
+
+.logAndRegBox{
+    background-color: #ffecec;
+    width: 400px;
+    height: 314px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*.title-box {*/
+/*    height: 60px;*/
+/*    background: url("./assets/images/login_title.png") no-repeat center;*/
+/*}*/
+.title-box {
+
+    text-align: center;
+    line-height: 60px;
+}
+
+.reg-box{
+    display: none;
+}
+
+
+
+.layui-form{
+    padding: 0 30px;
+
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-end;
+}
+.layui-form-item
+{
+    position: relative;
+
+}
+
+
+.layui-form-item .layui-icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+}
+.layui-input{
+    padding-left: 32px;
+}

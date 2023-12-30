@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------
+
+01头像上传
+  axios({
+    url: 'http://hmajax.itheima.net/api/avatar',
+    method: 'PUT',
+    data
+
+    02  注册
+
+    03 登录
+
+
+    04
+
+http://hmajax.itheima.net/api/settings
+
+
+----https://apifox.com/apidoc/project-1937884

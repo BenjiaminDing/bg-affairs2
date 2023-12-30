@@ -1,0 +1,23 @@
+官网示例：https://fengyuanchen.github.io/cropper/
+官方github文档：https://github.com/fengyuanchen/cropperjs
+npm官方网站：https://www.npmjs.com/package/cropper
+
+作者：安北分享
+链接：https://www.jianshu.com/p/9dc2f643cb6a
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+https://www.jianshu.com/p/9dc2f643cb6a
+
+----
+import Cropper from 'cropperjs'
+import 'cropperjs/dist/cropper.css'
+this.myCropper = new Cropper('被裁剪对象', '配置对象') //返回一个cropper对象
+
+this.myCropper.getCroppedCanvas().toDataURL('image/jpeg') //拿到裁剪后的base64的图片
+this.myCropper.getCropBoxData();    //获取裁剪框数据
+this.myCropper.setCropBoxData();    //设置裁剪框数据
+this.myCropper.getCanvasData();      //获取图片数据
+this.myCropper.setCanvasData();      //设置图片数据
+
+
+----
